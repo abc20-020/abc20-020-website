@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+  background: url(../img/1.jpg);
+}
+header{
+  background-color: cornflowerblue;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+}
+
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.75s ease;
+}
+
+ul li a:hover{
+  background-color: #fff;
+  color: #000;
+}
+ul li.active a{
+  background-color: #fff;
+  color: #000;
+}
+.logo img{
+  float: left;
+  width: 15px;
+  height: 15px;
+}
+
+.main{
+  max-width: 1200px;
+  margin: auto;
+}
+.title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.title h1{
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+p{
+  color: white;
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center;
+}
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+span{
+  background: #009688;
+  height: 100%;
+  width: 0%;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+button:hover span{
+  width: 100%;
+}
+button:hover{
+  border: none;
+}
+@media screen and (max-width:1024px)
+{
+  html, body{
+    width: 100%;
+  }
+  nav img
+  {
+    transform: translate(-33px);
+  }
+  .main div img 
+  {
+    width: 100px;
+  }
+  }
+  @media screen and (max-width:768px)
+  {
+    body
+    {
+
+    }
+  }
